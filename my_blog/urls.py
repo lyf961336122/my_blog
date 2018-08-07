@@ -15,12 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from article import migrations
+
+from article.models import Article
 #admin lyf961336122
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('article.urls')),
-    # path('home/', include('article.urls')),
-    # path('detail/', include('article.urls')),
-    # path('test/', include('article.urls')),
+
+
 ]
